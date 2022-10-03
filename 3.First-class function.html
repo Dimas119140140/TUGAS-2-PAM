@@ -1,0 +1,22 @@
+<script>
+    const aritmatikaDasar = {
+        add: ( p, q) => {
+            return '${p} + ${q} = ${p + q}'; 
+        },
+        subtract : (p ,q) => {
+            return '${p} - ${q} = ${p - q}' 
+        },
+        multiply : (p ,q) => {
+            return '${p} * ${q} = ${p * q}'
+        },
+        division : (p ,q) => {
+            if (p != 0) return '${p} / ${q} = ${p / q}';
+            return 'tidak bisa divide oleh 0';
+        }
+    }
+
+document.write(aritmatikaDasar.add (90,80) + "<br>" );
+document.write(aritmatikaDasar.subtract (89,4) + "<br>" );
+document.write(aritmatikaDasar.multiply (6,6) + "<br>" );
+document.write(aritmatikaDasar.division (200,5));
+</script>
